@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background: #456;
+  font-family: "Arial", "メイリオ";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+section {
+	display: flex;
+	margin: 0 auto;
+	padding: 20px;
+	width: 80%;
+	justify-content: space-between;
+}
+
+article {
+	margin-right: 3%;
+	padding: 20px 5%;
+	width: 30%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+article:nth-child(3n) {
+	margin-right: 0;
+}
+
+article h1{
+  text-align: center;
+}
+
+/* リセット */
+
+/* 005 */
+button {
+  border-radius: 3px;
+
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 220px;
+  padding: 30px 70px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: rgb(8, 103, 192);
+}
+button:hover {
+  background: rgb(8, 103, 192);
+}
+
+
+.button {
+  display       : inline-block;
+  font-size     : 40pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+.area {
+  width: 100px;
+  height: 30px;
+  font-size: 30px;
+  margin: auto;
+  }
+
+body {
+	line-height: 1;
+  background: rgb(205, 224, 243);
+  font-size: 40px;
+}
+
+.container {
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container3 {
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottom{
+  margin-bottom: 100px;
+}
+
+header{
+  height:200px;
+  width: 100%;
+  background: #28d;
+}
+header h1{
+  font-size: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 200px;
+}
+
+.bar{
+  background-color:rgba(237, 237, 237, 0.9);
+  margin-bottom: 50px;
+}
+
+
+table.calender_column{
+  width: 100%;
+}
+
+table.calender_column td{
+  padding: 5px;
+  border: 1px solid #CCC;
+}
+
+/* 日曜日 */
+table.calender_column tr.week0{
+  color: #FF0000;
+}
+
+/* 土曜日 */
+table.calender_column tr.week6{
+  color: #0000FF;
+}
+
+/* 今日 */
+/* table.calender_column tr.today{
+  background-color: #fbffa3;
+  font-weight: bold;
+} */
+
+table.calender_column td:nth-child(1){
+  width: 20%;
+  text-align: center;
+}
+
+table.calender_column td:nth-child(2){
+  width: 30%;
+  color: #111111;
+}
+
+table.calender_column td:nth-child(3){
+  width: 20%;
+  color: #111111;
+}
+
+table.calender_column td:nth-child(4){
+  width: 10%;
+  color: #111111;
+}
