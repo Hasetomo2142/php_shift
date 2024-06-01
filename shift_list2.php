@@ -7,8 +7,8 @@ $id = $_SESSION['user_id'];
 
 //データベースに接続
 $dsn = 'mysql:dbname=xs443757_shift;host=localhost';
-$user = 'xs443757_tomo';
-$password = 'TomoTomo0420';
+$user = '*******';
+$password = '*******';
 
 try {
   $dbh = new PDO($dsn, $user, $password);
